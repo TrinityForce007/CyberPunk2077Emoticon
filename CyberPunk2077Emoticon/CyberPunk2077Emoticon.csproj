@@ -44,6 +44,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,12 +71,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\index.css" />
+    <Content Include="image\cyberpunk2077_icon.jpg" />
+    <Content Include="image\icon\icon-police.png" />
+    <Content Include="index.html" />
+    <Content Include="js\img.js" />
+    <Content Include="js\imgMove.js" />
+    <Content Include="js\index.js" />
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="lib\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="lib\jquery.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="lib\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="lib\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Handler1.ashx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,6 +111,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="upload\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

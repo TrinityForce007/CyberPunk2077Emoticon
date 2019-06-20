@@ -1,0 +1,115 @@
+/*header & footer start*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-default {
+    margin: 0 -15px;
+}
+
+#footer {
+    width: 100%;
+    height: 34px;
+    border: 1px solid #e7e7e7;
+    position: fixed;
+    bottom: 0;
+    background: white;
+}
+
+.copyright {
+    width: 100%;
+    height: 34px;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+.copyright span {
+    margin: 0 3px;
+}
+
+#footer a {
+    line-height: 34px;
+    color: black;
+}
+
+#footer a i {
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url("../image/icon/icon-police.png") 0 0 no-repeat;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+/*header & footer end*/
+/*content start*/
+#upload {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#btn-upload {
+    position: absolute;
+    width: 106px;
+    height: 46px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+#progressBar{
+    width: 80%;
+    height:20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+/*content end*/
+/*img-canvas start*/
+#imgEdit{
+    text-align: center;
+}
+#img-warp {
+    display: inline-block;
+    position: relative;
+}
+#img-floatIcon-warp{
+    position: absolute;
+    width: 30%;
+    /*border: 1px solid yellow;*/
+    cursor: col-resize;
+    z-index: 100;
+    top: 30px;
+}
+#img-floatIcon{
+    width: 100%;
+    cursor: move;
+}
+/*img-canvas end*/
+
+/*btnGroup start*/
+#buttonGroup{
+    height: 228px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+#buttonGroup input{
+    margin: 5px;
+}
+/*btnGroup end*/

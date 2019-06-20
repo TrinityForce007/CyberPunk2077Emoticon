@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberPunkImagePS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">CyberPunk2077ImagePS</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">p图项目<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="CyberPunk2077">赛博朋克2077</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div id="content">
+    <div id="upload">
+        <input type="button" id="btn-upload" class="btn btn-success btn-lg" value="上传图片" onclick="file_dialog_open()">
+        <input type="file" id="uploadFileHidden" style="display: none"
+               accept="image/gif,image/jpeg,image/jpg,image/png,image/svg " onchange="imageUpload()">
+        <div id="progressBar">
+            <div class="container">
+                <div class="progress">
+                    <div class="progress-bar" id="imgUploadProcessBar" role="progressbar" aria-valuenow="0"
+                         aria-valuemin="0" aria-valuemax="100"
+                         style="min-width: 2em;">
+                        0%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="imgEdit">
+        <div id="img-warp">
+            <img src="" alt="" id="img-main">
+            <div id="img-floatIcon-warp">
+                <img src="./image/cyberpunk2077_icon.jpg" alt="" id="img-floatIcon">
+            </div>
+        </div>
+    </div>
+    <div id="buttonGroup">
+        <input type="button" class="btn btn-default" id="btn-img-narrow" value="图标缩小"/><br>
+        <input type="button" class="btn btn-default" id="btn-img-enlarge" value="图标放大"><br>
+        <input type="button" class="btn btn-default" id="btn-center-x" value="水平居中"><br>
+        <input type="button" class="btn btn-default" id="ben-center-y" value="垂直居中"><br>
+        <input type="button" class="btn btn-default" id="export" value="导&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出">
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="copyright">
+                <span>
+                    Copyright @武文飞
+                </span>
+            <span>
+                    |
+                </span>
+            <span>
+                    <a href="http://www.miitbeian.gov.cn/" target="_blank"><i></i>晋ICP备19002972号</a>
+                </span>
+        </div>
+    </div>
+</div>
+<script src="./lib/jquery.min.js"></script>
+<script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="js/imgMove.js"></script>
+s
+</body>
+</html>
